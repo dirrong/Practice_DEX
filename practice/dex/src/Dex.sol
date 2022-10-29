@@ -84,7 +84,7 @@ contract Dex is ERC20 {
 
         uint256 afterliquidity;
 
-        if (firstliquidity == 0 || before_k == 0) {
+        if (firstliquidity == 0 ) {
             afterliquidity = sqrt(after_k);
         } else {
             uint256 afterliquidity_X = firstliquidity * (After_balanceX/balanceX);
